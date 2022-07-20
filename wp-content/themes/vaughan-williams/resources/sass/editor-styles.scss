@@ -1,0 +1,71 @@
+$font-family-sans-serif: 'Radio Canada', sans-serif;
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+);
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1300px,
+);
+$font-size-base: 1.125rem;
+$paragraph-margin-bottom : .25rem;
+@import 'node_modules/bootstrap/scss/functions';
+@import 'node_modules/bootstrap/scss/variables';
+@import 'node_modules/bootstrap/scss/mixins';
+@import 'node_modules/bootstrap/scss/reboot';
+@import 'node_modules/bootstrap/scss/grid';
+@import 'node_modules/bootstrap/scss/utilities/display';
+@import 'node_modules/bootstrap/scss/utilities/flex';
+@import 'node_modules/bootstrap/scss/utilities/text';
+@import 'node_modules/bootstrap/scss/utilities/sizing';
+@import 'node_modules/bootstrap/scss/utilities/spacing';
+
+@import 'variables';
+@import 'style';
+@import 'font-sizes';
+@import 'posts';
+@import 'colors';
+@import 'buttons';
+@import 'parts';
+@import 'forms';
+@import 'cf7';
+@import 'cards';
+@import 'slick';
+@import 'block-components';
+
+/* Main column width */
+.wp-block {
+    max-width: 1340px;
+}
+
+/* Width of "wide" blocks */
+.wp-block[data-align="wide"] {
+    max-width: 1500px;
+}
+
+/* Width of "full-wide" blocks */
+.wp-block[data-align="full"] {
+    max-width: none;
+}	
+
+.slider-testimonial {
+	text-align: center;
+	> div:not(:first-child) {
+		display: none;
+	}
+	
+}
+
+.in-the-news {
+	.card {
+		width: 31%;
+		display: inline-block;
+		margin: 0 15px 0 0;
+	}
+}

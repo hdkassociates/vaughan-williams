@@ -1,0 +1,39 @@
+.slick-slider {
+	.slick-slide {
+		padding: 0 15px;
+	}
+	.slick-prev{ 
+		left: -25px;
+		@include media-breakpoint-up(xl) {
+			left: -40px;
+    	}
+		&:before {
+	    	content: " ";
+	    	display: block;
+	    	background-image: url(../../themes/VAUGHAN-WILLIAMS/dist/images/arrow-left.svg);
+	    	background-size: contain;
+	    	background-repeat: no-repeat;
+	    	width: 28px;
+	    	height: 43px;
+	    	margin-top: -21.5px;
+	    }
+
+    }
+
+    .slick-next{ 
+    	right: -25px;
+    	@include media-breakpoint-up(xl) {
+			right: -35px;
+    	}
+    	&:before {
+		    content: " ";
+		    display: block;
+	    	background-image: url(../../themes/VAUGHAN-WILLIAMS/dist/images/arrow-right.svg);
+	    	background-size: contain;
+	    	background-repeat: no-repeat;
+	    	width: 28px;
+	    	height: 43px;
+	    	margin-top: -21.5px;
+	    }
+	}
+}

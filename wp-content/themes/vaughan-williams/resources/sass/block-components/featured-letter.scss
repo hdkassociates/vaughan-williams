@@ -1,0 +1,68 @@
+.featured-letter, .featured-letter-block {
+	padding-bottom: 0;
+	.content-wrapper {
+		background-image: url('../../uploads/2022/07/bg.svg');
+		background-size: cover; 
+		background-repeat: no-repeat; 
+		background-position: right -200px;
+		padding-bottom: 16rem;
+
+		h2 {
+			text-transform: initial;
+			margin-bottom: 1.66rem;
+		}
+		.row {
+			.highlighted-text {
+				p {
+					font-weight: 600;
+					margin-bottom: 3.5rem;
+				}
+			}
+		}
+	}
+}
+
+.letter-frame {
+	background-color: $white;
+    border: 1px solid #B4B4B4;
+    box-shadow: 0px 0px 20px rgba(0,0,0,.29);
+    padding: 2rem;
+
+    hr {
+    	margin: 1.33rem 0;
+    }
+
+    p {
+    	margin-bottom: 2.77rem;
+    }
+}
+
+.letter-number {
+	margin: 3rem 0;
+}
+
+.letter-information {
+	margin-top: 3rem;
+	p {
+		display: block;
+
+		.letter-detail {
+			display: inline-block;
+			font-weight: 500;
+			width: 35%;
+		}
+		.detail-information {
+			display: inline-block;
+			width: 64%;
+		}
+	}
+}
+
+.search-letters {
+	.container {
+		.row {
+			align-items: center;
+		}
+	}
+}
+

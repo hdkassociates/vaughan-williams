@@ -1,0 +1,14 @@
+.form-group{
+	label {
+		display: block;
+	}
+}
+
+button#search-submit {
+    width: 200px;
+    margin: 0;
+}
+#search-term {
+	flex: 1;
+	padding: 15px 5px;
+}

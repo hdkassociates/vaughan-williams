@@ -1,0 +1,49 @@
+.card {
+	border: none;
+	border-radius: 0;
+
+	.card-image-wrapper {
+		background-size: initial;
+	    position: relative;
+	    background-position: center;
+	    overflow: hidden;
+	    flex-shrink: 0;
+	    z-index: 2;
+	    background-color: transparent;
+	    border-top-left-radius: 0;
+		border-top-right-radius: 0;
+		
+		&::after {
+		     display: none;
+		}
+
+		.card-image {
+		    position: relative;
+
+		    &::after {
+			    display: none;
+			}
+		}
+		img {
+		    display: block;
+		    height: initial;
+		    position: relative;
+		    object-fit: initial;
+		}
+	}
+
+	.card-content {
+		background-color: initial;
+		border-bottom-left-radius: 0;
+		border-bottom-right-radius: 0;
+		padding: 0;
+		.card-title {
+			font-size: 24px;
+			font-weight: 700;
+			margin: 1.5rem 0 2.4rem;
+		}
+		p.card-excerpt {
+			font-size: 16px;
+		}
+	}
+}

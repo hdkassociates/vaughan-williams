@@ -1,0 +1,23 @@
+.card {
+	&.card--gallery {
+
+		.card-image-wrapper {
+
+			.overlay{
+				background-color: rgba(9,153,147,.4);
+				opacity: 0;
+				z-index: 2;
+				&:hover {
+					opacity: 1;
+				}
+
+			}
+					}
+		.card-content {
+			p.caption {
+				font-size: 14px;
+				margin-top: 1rem;
+			}
+		}
+	}
+}

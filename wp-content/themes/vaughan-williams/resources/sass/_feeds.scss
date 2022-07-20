@@ -1,0 +1,13 @@
+.feed {
+	.row {
+		hr {
+			border-top: 1px solid $white;
+			margin: 2.5rem 0;
+		}
+        &:last-of-type {
+            hr {
+                display: none;
+            }
+        }
+    }
+}

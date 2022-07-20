@@ -1,0 +1,12 @@
+#breadcrumbs {
+	span {
+		font-weight: bold;
+		&.breadcrumb_last {
+			font-weight: normal;
+		}
+	}
+}
+
+.breadcrumb-wrapper + section {
+	padding-top: 1.5rem;
+}

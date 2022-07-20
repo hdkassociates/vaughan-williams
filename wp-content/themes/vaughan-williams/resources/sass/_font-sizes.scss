@@ -1,0 +1,61 @@
+.ft-14, .has-ft-14-font-size {
+    font-size: $ft-14;
+}
+
+.ft-20, .has-ft-20-font-size {
+    font-size: $ft-20;
+}
+
+.ft-30, .has-ft-30-font-size {
+    font-size: $ft-30-sm;
+    @include media-breakpoint-up(md) {
+        font-size: $ft-30-md;
+    }
+    @include media-breakpoint-up(lg) {
+         font-size: $ft-30-lg;
+         line-height: 42px;
+    }
+}
+
+.ft-40, .has-ft-40-font-size {
+    font-size: $ft-40-sm;
+    @include media-breakpoint-up(md) {
+        font-size: $ft-40-md;
+    }
+    @include media-breakpoint-up(lg) {
+         font-size: $ft-40-lg;
+         line-height: 52px;
+    }
+}
+.ft-48, .has-ft-48-font-size {
+    font-size: $ft-48-sm;
+    @include media-breakpoint-up(md) {
+        font-size: $ft-48-md;
+    }
+    @include media-breakpoint-up(lg) {
+         font-size: $ft-48-lg;
+         line-height: 2.77rem;
+    }
+}
+
+.ft-52,.has-ft-52-font-size { 
+    font-size: $ft-52-sm;
+    @include media-breakpoint-up(md) {
+        font-size: $ft-52-md;
+    }
+    @include media-breakpoint-up(lg) {
+         font-size: $ft-52-lg;
+         line-height: 70px;
+    }
+}
+
+.ft-56 {
+    font-size: $ft-56-sm;
+    @include media-breakpoint-up(md) {
+        font-size: $ft-56-md;
+    }
+    @include media-breakpoint-up(lg) {
+         font-size: $ft-56-lg;
+         line-height: 70px;
+    }
+}

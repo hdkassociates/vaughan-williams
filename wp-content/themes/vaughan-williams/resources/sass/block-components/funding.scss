@@ -1,0 +1,28 @@
+.funding {
+	padding-bottom: 0;
+	.bg-vw-mark-white {
+		padding-bottom: 12rem;
+		background-color: $light-red;
+		padding-top: 3rem;
+		.container {
+			.row {
+				padding-bottom: 3rem;
+
+				.image {
+					&:after {
+						content: '';
+					    display: block;
+					    padding-bottom: 100%;
+					}
+				}
+				.content-wrapper {
+					display: flex;
+					align-items: center;
+					.wrap {
+						padding: 2rem;
+					}
+				}
+			}
+		}
+	}
+}

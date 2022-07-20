@@ -1,0 +1,125 @@
+/*!
+Theme Name: Vaughan Williams
+Theme URI: http://underscores.me/
+Author: HDK/GreigCooke
+Author URI: https://greigcooke.com
+Description: Starter Theme
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: vaughan_williams
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+
+/*--------------------------------------------------------------
+# BOOTSTRAP 
+--------------------------------------------------------------*/
+
+$font-family-sans-serif: 'Radio Canada', sans-serif;
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+);
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1300px,
+);
+$font-size-base: 1.125rem;
+$paragraph-margin-bottom : .25rem;
+@import 'node_modules/bootstrap/scss/functions';
+@import 'node_modules/bootstrap/scss/variables';
+@import 'node_modules/bootstrap/scss/mixins';
+
+//BOOTSTRAP
+//@import 'node_modules/bootstrap/scss/root';
+@import 'node_modules/bootstrap/scss/reboot';
+//@import 'node_modules/bootstrap/scss/type';
+@import 'node_modules/bootstrap/scss/images';
+//@import 'node_modules/bootstrap/scss/code';
+@import 'node_modules/bootstrap/scss/grid';
+//@import 'node_modules/bootstrap/scss/tables';
+//@import 'node_modules/bootstrap/scss/forms';
+//@import 'node_modules/bootstrap/scss/buttons';
+//@import 'node_modules/bootstrap/scss/transitions';
+//@import 'node_modules/bootstrap/scss/dropdown';
+//@import 'node_modules/bootstrap/scss/button-group';
+//@import 'node_modules/bootstrap/scss/input-group';
+//@import 'node_modules/bootstrap/scss/custom-forms';
+//@import 'node_modules/bootstrap/scss/nav';
+//@import 'node_modules/bootstrap/scss/navbar';
+//@import 'node_modules/bootstrap/scss/card';
+//@import 'node_modules/bootstrap/scss/breadcrumb';
+//@import 'node_modules/bootstrap/scss/pagination';
+//@import 'node_modules/bootstrap/scss/badge';
+//@import 'node_modules/bootstrap/scss/jumbotron';
+//@import 'node_modules/bootstrap/scss/alert';
+//@import 'node_modules/bootstrap/scss/progress';
+@import 'node_modules/bootstrap/scss/media';
+//@import 'node_modules/bootstrap/scss/list-group';
+//@import 'node_modules/bootstrap/scss/close';
+//@import 'node_modules/bootstrap/scss/modal';
+//@import 'node_modules/bootstrap/scss/tooltip';
+//@import 'node_modules/bootstrap/scss/popover';
+//@import 'node_modules/bootstrap/scss/carousel';
+@import 'node_modules/bootstrap/scss/utilities/display';
+@import 'node_modules/bootstrap/scss/utilities/flex';
+@import 'node_modules/bootstrap/scss/utilities/text';
+@import 'node_modules/bootstrap/scss/utilities/sizing';
+@import 'node_modules/bootstrap/scss/utilities/spacing';
+//@import 'node_modules/bootstrap/scss/print';
+@import 'bootstrap-extras/bootstrap-extras';
+
+
+@import 'node_modules/slick-carousel/slick/slick.scss';
+$slick-font-path: '../vaughan-williams/dist/fonts/';
+$slick-loader-path: '../vaughan-williams/dist/images/';
+@import 'node_modules/slick-carousel/slick/slick-theme.scss';
+
+// FONT AWESOME
+//$fa-font-path:        "../fonts";
+//@import 'node_modules/font-awesome/scss/font-awesome';
+//@import 'node_modules/font-awesome/scss/mixins';
+//@import 'node_modules/font-awesome/scss/path';
+//@import 'node_modules/font-awesome/scss/core';
+//@import 'node_modules/font-awesome/scss/larger';
+//@import 'node_modules/font-awesome/scss/fixed-width';
+//@import 'node_modules/font-awesome/scss/list';
+//@import 'node_modules/font-awesome/scss/bordered-pulled';
+//@import 'node_modules/font-awesome/scss/animated';
+//@import 'node_modules/font-awesome/scss/rotated-flipped';
+//@import 'node_modules/font-awesome/scss/stacked';
+//@import 'node_modules/font-awesome/scss/icons';
+//@import 'node_modules/font-awesome/scss/screen-reader';
+//Venobox
+//@import 'node_modules/venobox/venobox/venobox';
+//@import 'node_modules/aos/src/sass/aos';
+@import 'variables';
+//@import 'bootstrap-overrides/bootstrap-overrides';
+@import 'style';
+@import 'font-sizes';
+@import 'posts';
+@import 'colors';
+@import 'buttons';
+@import 'background-vw-marks';
+@import 'feeds';
+@import 'parts';
+@import 'forms';
+@import 'cf7';
+@import 'funding-base';
+@import 'news-base';
+@import 'rvw150-base';
+@import 'cards';
+@import 'slick';
+$hamburger-layer-color         : #fff !default;
+$hamburger-layer-border-radius : 3px !default;
+$hamburger-layer-height        : 3px !default;
+//@import "node_modules/hamburgers/_sass/hamburgers/hamburgers";
+@import 'block-components';
+//@import 'cf7';
+//@import 'repeatablesections';

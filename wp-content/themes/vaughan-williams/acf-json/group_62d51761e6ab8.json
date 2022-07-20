@@ -1,0 +1,49 @@
+{
+    "key": "group_62d51761e6ab8",
+    "title": "Text Block",
+    "fields": [
+        {
+            "key": "field_62d5193928b0f",
+            "label": "Width",
+            "name": "width",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "80": "80",
+                "70": "70"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "default_value": 80,
+            "layout": "horizontal",
+            "return_format": "value",
+            "save_other_choice": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/text-block"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1658133837
+}

@@ -1,0 +1,92 @@
+.button-design {
+    border: 1px solid $lime-dark;
+    padding: 7px 18px;
+    display: inline-block;
+    font-weight: 600;
+    margin-top: .8em;
+    margin-bottom: .8em;
+    color: $lime-dark;
+    -moz-transition: all .4s ease-in;
+    -o-transition: all .4s ease-in;
+    -webkit-transition: all .4s ease-in;
+    transition: all .4s ease-in;
+    text-decoration: none;
+
+    &:hover {
+        color: $white;
+        background-color: $lime-dark;
+        text-decoration: none;
+    }
+
+
+    &.red {
+    	border: 1px solid $dark-red;
+    	color: $intense-red;
+        background-color: $white;
+
+    	&.downloads {
+    		display: inline-flex;
+    		align-items: center;
+    		padding: 0 18px 0 0;
+            margin: 0 auto;
+
+    		.button-icon {
+    			background-color: $intense-red;
+    			padding: 7px;
+    			margin-right: 18px;
+    		}
+    	}
+
+    	&:hover {
+	        color: $white;
+	        background-color: $intense-red;
+	    }
+    }
+
+    &.periwinkle  {
+    	border: 1px solid $periwinkle;
+    	color: $dark-periwinkle;
+
+    	&:hover {
+	        color: $white;
+	        background-color: $periwinkle;
+	    }
+    }
+
+    &.rich-depth  {
+        border: 1px solid $rich-depth;
+        color: $rich-depth;
+
+        &:hover {
+            color: $white;
+            background-color: $rich-depth;
+        }
+    }
+
+    &.stillness {
+        border: 1px solid $dark-stillness;
+        color: $dark-stillness;
+
+        &.back {
+            display: inline-flex;
+            align-items: center;
+            padding: 0 18px 0 0;
+
+            .button-icon {
+                background-color: $dark-stillness;
+                padding: 7px;
+                margin-right: 18px;
+            }
+        }
+
+        &:hover {
+            color: $white;
+            background-color: $dark-stillness;
+        }
+    }
+}
+
+.button-wrapper {
+    display: block; 
+    text-align: center;
+}

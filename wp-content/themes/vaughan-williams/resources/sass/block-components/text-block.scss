@@ -1,0 +1,14 @@
+.text-block {
+	.highlighted-text {
+		margin-bottom: 3.5rem;
+	}
+
+	p {
+		margin-bottom: 1.5rem;
+	}
+}
+
+.text-block + .text-block:not(.how-to-apply) {
+	padding-top: 0;
+	margin-top: -2rem;
+}

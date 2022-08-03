@@ -8,12 +8,19 @@ function logout_user() {
 	die;
 }
 
-if (!class_exists('ACF')) {
-	$theme_configuration = acf_add_options_page( [ 
-	    'page_title'  => __('Theme configuration', 'cogpress'),
-	    'menu_title'  => __('Configuration', 'cogpress'),
-	    'capability'  => 'manage_options'
-	   ]
-	);
+if( function_exists('acf_add_options_page') ) {
 
+	acf_add_options_page(array(
+		'page_title' 	=> 'Theme Configuration',
+		'menu_title'	=> 'Theme configuration',
+		'menu_slug' 	=> 'theme-configuration-settings',
+		'capability'	=> 'edit_posts',
+		'redirect'		=> false
+	));
+	
+	acf_add_options_sub_page(array(
+		'page_title' 	=> 'Theme Footer Settings',
+		'menu_title'	=> 'Footer',
+		'parent_slug'	=> 'theme-configuration-settings',
+	));
 }

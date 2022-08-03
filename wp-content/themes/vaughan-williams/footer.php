@@ -15,10 +15,9 @@
 		<div class="row">
 			<div class="container site-footer--image">
 				<div class="row">
-					
 					<?php echo wp_get_attachment_image(52, 'full', false, array('class' => 'footer-visual') ); ?>
 					<div class="underlay">
-						<?php echo wp_get_attachment_image(55, 'full', false, array('class' => 'footer-visual') ); ?>
+						<?php echo wp_get_attachment_image(get_footer_image(), 'full', false, array('class' => 'footer-visual') ); ?>
 					</div>
 				</div>
 			</div>

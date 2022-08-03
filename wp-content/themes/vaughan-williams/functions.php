@@ -348,3 +348,19 @@ function wpdocs_register_meta_boxes() {
 	    'side' ); // <-- this is important
 }
 add_action( 'add_meta_boxes', 'wpdocs_register_meta_boxes' );
+
+function my_acf_admin_head() {
+    ?>
+    <style type="text/css">
+
+    .wp-admin .interface-interface-skeleton__sidebar .edit-post-meta-boxes-area #poststuff #acf-group_62ea730da728d h2.hndle {
+	    font-weight: 500 !important;
+	    padding: 0 18px !important;
+	    font-size: 13px;
+	}
+
+    </style>
+    <?php
+}
+
+add_action('acf/input/admin_head', 'my_acf_admin_head');

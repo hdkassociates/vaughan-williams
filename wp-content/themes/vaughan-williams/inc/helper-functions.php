@@ -153,3 +153,37 @@ function words_limit($string, $wordcount) {
    $first_part = implode(" ", array_splice($pieces, 0, $wordcount));
    return $first_part; 
 }
+
+function get_footer_image() {
+  if(get_field('footer_image')) :
+    $image_id = get_field('footer_image', get_the_ID()); 
+
+  elseif(is_page()): 
+    global $post;
+
+    //master fallback 
+    $image_id = 55; 
+    echo $post->post_parent;
+    //Discover
+    if($post->ID == 14 || $post->post_parent == 14 || $post->post_parent == 81) : 
+      $image_id = get_field('discover', 'option') ?: 55; 
+    //Funding 
+    elseif($post->ID == 10 || $post->post_parent == 10): 
+      $image_id = get_field('funding', 'option')?: 55; 
+    //News 
+    elseif($post->ID == 12 || $post->post_parent == 12): 
+      $image_id = get_field('news', 'option')?: 55; 
+    //The Foundation 
+    elseif($post->ID == 6 || $post->post_parent == 6): 
+      $image_id = get_field('the_foundation', 'option')?: 55; 
+    endif; 
+
+  elseif(is_single()): 
+    $image_id = get_field('news', 'option')?: 55; 
+
+  else : 
+    $image_id = 55; 
+  endif; 
+
+  return $image_id; 
+}

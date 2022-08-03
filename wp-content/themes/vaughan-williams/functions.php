@@ -273,6 +273,11 @@ require get_template_directory() . '/inc/custom-header.php';
 require get_template_directory() . '/inc/template-posttypes.php';
 
 /**
+ * Taxonomies
+ */
+require get_template_directory() . '/inc/template-taxonomies.php';
+
+/**
  * Custom Wordpress Functions
  */
 require get_template_directory() . '/inc/extra-functions.php';

@@ -163,7 +163,7 @@ function get_footer_image() {
 
     //master fallback 
     $image_id = 55; 
-    echo $post->post_parent;
+    $post->post_parent;
     //Discover
     if($post->ID == 14 || $post->post_parent == 14 || $post->post_parent == 81) : 
       $image_id = get_field('discover', 'option') ?: 55; 

@@ -1,12 +1,42 @@
 <?php
 //Disable Gutenberg for letters
-add_filter('use_block_editor_for_post_type', 'prefix_disable_gutenberg', 10, 2);
+
+/*
+add_filter('use_block_editor_for_post_type', 'prefix_disable_gutenberg', 11, 2);
 function prefix_disable_gutenberg($current_status, $post_type)
 {
     $post_types = ['letter', 'who-we-are', 'publisher'];
     if (in_array($post_type, $post_types)) return false;
     return $current_status;
 }
+*/
+add_filter( 'use_block_editor_for_post', 'disable_gutenberg', 10, 2 );
+
+function disable_gutenberg( $can_edit, $post ) {
+    $post_types = ['letter', 'who-we-are', 'publisher', 'acf-field-group'];
+    if( $post->post_type == 'page' && $post->ID == 87 ) {
+        return false;
+    }
+    if (in_array($post->post_type, $post_types)) {
+        return false;
+    }
+    return true;
+}
+
+add_action( 'admin_init', 'hide_editor' );
+function hide_editor() {
+  $post_id = $_GET['post'] ? $_GET['post'] : $_POST['post_ID'] ;
+  if( !isset( $post_id ) ) return;
+  $rwv_in_pictures = get_the_title($post_id);
+  if($rwv_in_pictures == 'RVW IN PICTURES'){ 
+    remove_post_type_support('page', 'editor');
+    remove_post_type_support('page', 'excerpt');
+    remove_post_type_support('page', 'trackbacks');
+    remove_post_type_support('page', 'comments');
+    remove_meta_box( 'pageparentdiv', 'page', 'side' );
+  }
+}
+
 
 
 add_action('acf/init', 'my_acf_init_block_types');
